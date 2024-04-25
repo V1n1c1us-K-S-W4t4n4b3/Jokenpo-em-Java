@@ -4,4 +4,5 @@
     <string name="you_lose">Você perdeu 🥲</string>
     <string name="you_win">Você ganhou 😝</string>
     <string name="we_have_draw">Nós empatamos 😉</string>
+    <string name="select_option">Escolha uma opção abaixo</string>
 </resources>
