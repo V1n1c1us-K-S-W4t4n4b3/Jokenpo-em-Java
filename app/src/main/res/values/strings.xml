@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Jokenpo</string>
+    <string name="choice_app">Escolha do Aplicativo</string>
+    <string name="you_lose">Você perdeu 🥲</string>
+    <string name="you_win">Você ganhou 😝</string>
+    <string name="we_have_draw">Nós empatamos 😉</string>
+</resources>
