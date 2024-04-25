@@ -41,7 +41,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void selectChoice(String selectChoice) {
 
-        ImageView imageView = findViewById(R.id.iv_app_choice);
+        ImageView imageAppChoiceView = findViewById(R.id.iv_app_choice);
+
+        ImageView imageYourChoiceView = findViewById(R.id.iv_your_choice);
 
         TextView textResult = findViewById(R.id.tv_result);
 
@@ -51,20 +53,32 @@ public class MainActivity extends AppCompatActivity {
 
         String optionsApp = options[number];
 
-        switch (optionsApp) {
-
+        switch (selectChoice) {
             case "stone":
-                imageView.setImageResource(R.drawable.pedra);
+                imageYourChoiceView.setImageResource(R.drawable.pedra);
                 break;
 
             case "paper":
-                imageView.setImageResource(R.drawable.papel);
+                imageYourChoiceView.setImageResource(R.drawable.papel);
                 break;
 
             case "scissor":
-                imageView.setImageResource(R.drawable.tesoura);
+                imageYourChoiceView.setImageResource(R.drawable.tesoura);
+                break;
+        }
+
+        switch (optionsApp) {
+            case "stone":
+                imageAppChoiceView.setImageResource(R.drawable.pedra);
                 break;
 
+            case "paper":
+                imageAppChoiceView.setImageResource(R.drawable.papel);
+                break;
+
+            case "scissor":
+                imageAppChoiceView.setImageResource(R.drawable.tesoura);
+                break;
         }
 
         if (

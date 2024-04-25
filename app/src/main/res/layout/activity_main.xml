@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="top"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="64dp"
         android:gravity="center"
         android:text="@string/choice_app" />
 
@@ -26,14 +26,30 @@
         android:layout_margin="16dp"
         android:background="@drawable/padrao" />
 
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/tv_VS"
+        style="@style/TextAppearance.Material3.TitleMedium"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@drawable/icon_vs"
+        android:gravity="center" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_your_choice"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:background="@drawable/padrao" />
+
     <TextView
         android:id="@+id/tv_result"
         style="@style/TextAppearance.Material3.TitleMedium"
         android:layout_width="match_parent"
-        android:layout_margin="16dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-       android:text="@string/select_option" />
+        android:text="@string/select_option" />
 
     <LinearLayout
         android:layout_width="match_parent"
