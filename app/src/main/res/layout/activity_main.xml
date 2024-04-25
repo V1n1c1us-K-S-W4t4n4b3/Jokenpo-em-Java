@@ -13,7 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="top"
-        android:layout_margin="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="56dp"
         android:gravity="center"
         android:text="@string/choice_app" />
 
@@ -27,12 +28,12 @@
 
     <TextView
         android:id="@+id/tv_result"
-        style="@style/TextAppearance.Material3.BodyMedium"
+        style="@style/TextAppearance.Material3.TitleMedium"
         android:layout_width="match_parent"
         android:layout_margin="16dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        tools:text="@string/you_lose" />
+       android:text="@string/select_option" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,23 +42,23 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/iv_stone"
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/bt_stone"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
             android:background="@drawable/pedra" />
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/iv_paper"
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/bt_paper"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
             android:layout_margin="16dp"
             android:background="@drawable/papel" />
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/iv_scissor"
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/bt_scissor"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
